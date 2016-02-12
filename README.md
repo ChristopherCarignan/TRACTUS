@@ -16,12 +16,19 @@ Once the user has completed the previous step, the next step is to run the 'TRAC
 Once the analysis has been completed, the following results files will be available in the user-specified results directory:
 
 *_filenames.txt: Contains the file names for each image used in the analysis, in linear order.
+
 *_misc.txt: A log which contains the values of several variables which were used in the analysis.
+
 *_pc_heatmaps.txt: Contains the heatmaps for each PC retained in the analysis. These heatmaps can be viewed by using the 'pc_heatmap_plot.m' function in http://phon.chass.ncsu.edu/tractus/visualization. Please view the function for instructions on use.
+
 *_pc_scores.txt: Contains PC scores for each ultrasound frame. Rows are PC scores for each frame, and columns 1 to n are the scores for n PCs used in analysis (determined by the user).
+
 *_res_heatmaps.txt: Contains heatmaps constructed from the residuals of the PCA model.
+
 *_var_explained.txt: Conatins a single column of combined percentages of variance explained by each PC, where row 1 is the percentage of variance explained by PC1, row 2 is the percentage of variance explained by PC1 + PC2, etc.
+
 *_vecs.bmp: A bitmap image file which contains the vector matrix used in the PCA analysis. 
+
 **********
 
 References
