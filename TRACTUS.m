@@ -250,7 +250,7 @@ clearvars -except filenames crop_vecs pc_num pc_choice pc_thresh speaker pca_hei
 %% Run PC Analysis on cropped image vector matrix
 crop_vecs = im2double(crop_vecs);
 % run PCA model
-[pc, scores, pcvars] = princomp(crop_vecs);
+[pc, scores, pcvars] = pca(crop_vecs);
 % calculate cumulative percentage explained by PCs
 perc_exp = cumsum(pcvars./sum(pcvars)*100);
 
